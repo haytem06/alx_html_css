@@ -1,10 +1,10 @@
-
 /* Apply Flexbox to body and main containers */
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 main {
@@ -31,15 +31,24 @@ aside {
 
 /* Optional: Add some basic styling for better visualization */
 header, footer {
-    background-color: #f1f1f1;
+    background-color: #4CAF50;
+    color: white;
     padding: 10px;
     text-align: center;
 }
 
 article, aside {
     padding: 10px;
-    background-color: #e1e1e1;
+    background-color: #f4f4f4;
     border: 1px solid #ccc;
+    margin: 10px;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 /* Mobile responsive styles */
@@ -56,4 +65,24 @@ article, aside {
         flex: 1 100%;
         overflow-y: auto;
     }
+}
+
+/* Additional custom styles */
+h1, h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Specific styles for the article tag */
+article h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 1em;
+    color: #666;
 }
