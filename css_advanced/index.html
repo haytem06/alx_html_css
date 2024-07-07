@@ -1,82 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My First Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    class="works_on_smartphone">
     <header>
-         <div class="logo">&#9733;</div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tweets.html">Tweets</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <section class="banner">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my work and projects.</p>
+        <img src="images/banner.jpg" alt="Banner Image">
+    </section>
     <main>
-        <article>
-            <h1>Welcome to My First Portfolio</h1>
-            <p>This is the first paragraph of my simple HTML page. It introduces the content of the page.</p>
-
+        <section id="about">
             <h2>About Me</h2>
-            <p>This is the second paragraph. Here, I would talk about myself, my interests, and my background.</p>
-
-            <h3>Projects</h3>
-            <p>This is the third paragraph. In this section, I would describe some of the projects I have worked on, showcasing my skills and achievements.</p>
-
-            <h3>Contact Information</h3>
-            <p>This is the fourth paragraph. Here, I would provide ways to get in touch with me, such as my email address and links to my social media profiles.</p>
-
-            <h2>Check out ALX</h2>
-            <a href="https://www.alxafrica.com/"><img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo"></a>
-
-            <h2>Learners Information</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>25</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>Emily</td>
-                        <td>28</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Michael</td>
-                        <td>32</td>
-                        <td>Australia</td>
-                    </tr>
-                    <tr>
-                        <td>Sophia</td>
-                        <td>21</td>
-                        <td>UK</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-        <aside>
-            <p>placeholder to add comment thread later</p>
-        </aside>
+            <p>Introduction and background information.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Details of various projects.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact information.</p>
+        </section>
+        <section id="quotes">
+            <h2>Quotes</h2>
+            <blockquote>
+                <p>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
+            </blockquote>
+        </section>
+        <section id="videos">
+            <h2>Videos</h2>
+            <div class="video-list">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/videoid" frameborder="0" allowfullscreen></iframe>
+                    <p>Video description</p>
+                </div>
+                <!-- Add more videos as needed -->
+            </div>
+        </section>
+        <section id="membership">
+            <h2>Membership</h2>
+            <p>Join our membership program for exclusive benefits.</p>
+            <!-- Add membership details -->
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>Question 1?</h3>
+                <p>Answer to question 1.</p>
+            </div>
+            <!-- Add more FAQs as needed -->
+        </section>
     </main>
     <footer>
-        <p>Made by [YOUR NAME] - <a href="[ANY LINK]" target="_blank">here</a></p>
+        <p>&copy; 2024 My First Portfolio</p>
     </footer>
 </body>
 </html>
