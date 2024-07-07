@@ -1,89 +1,146 @@
-
-/* Apply Flexbox to body and main containers */
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+/* Reset and base styles */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main {
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
     display: flex;
-    flex-direction: row;
-    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-/* Ensure main tag keeps an automatic height and width */
-main {
-    flex: auto;
+header .logo img {
+    height: 50px; /* Adjust based on Figma */
 }
 
-/* Assign flex properties to article and aside */
-article {
-    flex: 2;
-    overflow-y: auto;
+nav ul {
+    list-style-type: none;
+    display: flex;
 }
 
-aside {
-    flex: 1;
-    overflow-y: auto;
+nav ul li {
+    margin: 0 15px;
 }
 
-/* Optional: Add some basic styling for better visualization */
-header, footer {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Adjust based on Figma */
+}
+
+/* Banner styles */
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 48px; /* Adjust based on Figma */
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 24px; /* Adjust based on Figma */
+}
+
+/* About, Projects, Contact sections */
+main section {
+    padding: 20px;
+}
+
+/* Quotes styles */
+#quotes {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
     text-align: center;
 }
 
-article, aside {
-    padding: 10px;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
+#quotes blockquote {
+    font-style: italic;
+    font-size: 18px; /* Adjust based on Figma */
+}
+
+/* Videos styles */
+#videos {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video {
+    flex: 1 1 30%;
     margin: 10px;
 }
 
-/* Logo styling */
-.logo {
-    font-size: 24px;
-    display: inline-block;
-    margin-right: 10px;
+.video iframe {
+    width: 100%;
+    height: auto;
 }
 
-/* Mobile responsive styles */
-@media (max-width: 600px) {
-    body.works_on_smartphone {
-        flex-direction: column;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    article, aside {
-        flex: 1 100%;
-        overflow-y: auto;
-    }
+.video p {
+    font-size: 14px; /* Adjust based on Figma */
 }
 
-/* Additional custom styles */
-h1, h2 {
-    color: #333;
+/* Membership styles */
+#membership {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
 }
 
-p {
-    line-height: 1.6;
+#membership p {
+    font-size: 16px; /* Adjust based on Figma */
 }
 
-/* Specific styles for the article tag */
-article h1 {
-    font-size: 2em;
+/* FAQ styles */
+#faq {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.faq-item {
     margin-bottom: 10px;
 }
 
-article p {
-    font-size: 1em;
-    color: #666;
+.faq-item h3 {
+    font-size: 18px; /* Adjust based on Figma */
+}
+
+.faq-item p {
+    font-size: 14px; /* Adjust based on Figma */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
