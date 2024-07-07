@@ -1,1 +1,89 @@
 
+/* Apply Flexbox to body and main containers */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Ensure main tag keeps an automatic height and width */
+main {
+    flex: auto;
+}
+
+/* Assign flex properties to article and aside */
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Optional: Add some basic styling for better visualization */
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+article, aside {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+    body.works_on_smartphone {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article, aside {
+        flex: 1 100%;
+        overflow-y: auto;
+    }
+}
+
+/* Additional custom styles */
+h1, h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Specific styles for the article tag */
+article h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 1em;
+    color: #666;
+}
