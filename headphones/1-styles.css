@@ -1,1 +1,60 @@
 
+/* 1-styles.css */
+
+/* Existing styles */
+
+/* What we do section */
+.what-we-do {
+  background-color: var(--bg-color);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: var(--secondary-color);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.feature .icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.feature p {
+  font-size: 1em;
+  color: var(--secondary-color);
+}
+
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Existing mobile styles */
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 20px auto;
+  }
+}
