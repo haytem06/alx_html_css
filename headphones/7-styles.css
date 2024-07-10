@@ -1,61 +1,54 @@
-/* 6-styles.css */
+/* 7-styles.css */
 
 /* Existing styles */
 
-/* Pentagon shape */
-.pentagon {
-  width: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 80px solid var(--primary-color);
-  position: relative;
-  margin: 0 auto 20px auto;
+/* Animations */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
-.pentagon:before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  width: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 30px solid var(--primary-color);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/* Our results section */
-.our-results {
-  background-color: var(--bg-color);
-  padding: 50px 20px;
-  text-align: center;
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.our-results h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: var(--secondary-color);
+/* What we do section animations */
+.what-we-do .feature {
+  animation: fadeIn 1s ease-in-out;
 }
 
-.results {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.what-we-do .feature:hover {
+  animation: bounce 1s;
 }
 
-.result {
-  flex: 1 1 30%;
-  margin: 20px;
+/* Our results section animations */
+.our-results .result {
+  animation: fadeIn 1s ease-in-out;
 }
 
-.result h3 {
-  font-size: 1.5em;
-  margin-top: 10px;
-  color: var(--primary-color);
-}
-
-.result p {
-  font-size: 1em;
-  color: var(--secondary-color);
+.our-results .result:hover {
+  animation: scaleUp 0.5s;
 }
 
 
@@ -63,12 +56,13 @@
 @media (max-width: 480px) {
   /* Existing mobile styles */
 
-  .results {
-    flex-direction: column;
-    align-items: center;
+  .what-we-do .feature,
+  .our-results .result {
+    animation: none;
   }
 
-  .result {
-    flex: 1 1 100%;
+  .what-we-do .feature:hover,
+  .our-results .result:hover {
+    animation: none;
   }
 }
